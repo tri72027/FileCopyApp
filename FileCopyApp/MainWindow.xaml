@@ -1,0 +1,17 @@
+﻿<Window x:Class="FileCopyApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="File Copy App" Height="250" Width="400">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Đường dẫn giám sát:"/>
+            <TextBox x:Name="inputTextBox" Width="300" Margin="0 10 0 10"/>
+            <TextBlock Text="Đường dẫn sao chép:"/>
+            <TextBox x:Name="outputTextBox" Width="300" Margin="0 10 0 10"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="startWatchingButton" Content="Bắt đầu giám sát" Click="StartWatching_Click" Margin="5"/>
+                <Button x:Name="stopWatchingButton" Content="Dừng giám sát" Click="StopWatching_Click" Margin="5" IsEnabled="False"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
